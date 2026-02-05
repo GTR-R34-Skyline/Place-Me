@@ -155,5 +155,3 @@ Sri Venkateswara College of Engineering
 Academic and demonstration use only.
 
 ---
-
-If you want a **one-page README**, **judge-optimized version**, or **README with screenshots**, say it.
