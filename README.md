@@ -1,73 +1,159 @@
-# Welcome to your Lovable project
+# AI-Powered Placement Recommendation System
 
-## Project info
+AI-driven placement intelligence platform that recommends job roles and internships to students while helping placement cells make data-backed decisions using explainable logic.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**Event:** IdeateX’25
+**Problem Statement ID:** IX2506
+**Category:** Software
+**Team:** Captain Cool
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Problem Statement
 
-**Use Lovable**
+Traditional placement processes rely heavily on CGPA and manual screening, which:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+* Misses skill-based talent
+* Lacks transparency for students
+* Increases workload for placement cells
 
-Changes made via Lovable will be committed automatically to this repo.
+This system introduces **placement decision intelligence** — focused on skills, interests, and readiness, not just marks.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Solution Overview
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+A centralized web platform that:
 
-Follow these steps:
+* Recommends roles, internships, and skill paths to students
+* Matches students with recruiter requirements
+* Provides explainable recommendations
+* Supports placement cells with analytics and insights
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Key Features
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Student Module
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+* Secure authentication
+* Profile creation (CGPA, skills, interests)
+* Resume upload (PDF)
+* Ranked job & internship recommendations
+* Match percentage with explanation
+* Skill Readiness Score (0–100)
+* Skill gap identification
+* Clean, modern, student-friendly UI
+
+### Placement Cell Admin Module
+
+* Job & internship management
+* Student readiness overview
+* Placement status tracking
+* Analytics dashboard:
+
+  * Role-wise student distribution
+  * Average readiness scores
+  * Top in-demand skills
+
+---
+
+## Recommendation Logic
+
+Explainable weighted scoring model:
+
+* Skill match: **50%**
+* CGPA relevance: **25%**
+* Interest alignment: **25%**
+
+Highlights:
+
+* No CGPA-only filtering
+* Skill-first recommendations
+* Cold-start handling using interests
+* Clear “Why recommended” reasoning
+* Lightweight feedback-based improvement
+
+---
+
+## Tech Stack
+
+**Frontend**
+
+* Modern web UI
+* Card-based layouts
+* Responsive design
+
+**Backend**
+
+* REST API (FastAPI / Django-style)
+* JWT authentication
+
+**Database & Storage**
+
+* PostgreSQL
+* File storage for resumes
+
+**AI / Intelligence**
+
+* Rule-based recommendation engine
+* Transparent and explainable logic
+
+---
+
+## System Architecture
+
+```
+Student Web App
+        |
+Admin Dashboard
+        |
+     REST API
+        |
+Recommendation Engine
+        |
+     PostgreSQL
+        |
+   Resume Storage
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Feasibility & Scalability
 
-**Use GitHub Codespaces**
+* Uses existing student data
+* No new infrastructure required
+* Low deployment cost
+* Can be rolled out in phases:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+  1. Recommendations
+  2. Admin dashboard
+  3. Analytics & optimization
 
-## What technologies are used for this project?
+Scalable to inter-college or SaaS deployment.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Status
 
-## How can I deploy this project?
+* Core recommendation logic implemented
+* Student & admin flows integrated
+* Seed data added for demo
+* Ready for evaluation and presentation
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## Team
 
-Yes, you can!
+**Captain Cool**
+Sri Venkateswara College of Engineering
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## License
+
+Academic and demonstration use only.
+
+---
+
+If you want a **one-page README**, **judge-optimized version**, or **README with screenshots**, say it.
